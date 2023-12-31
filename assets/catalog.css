@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    background-color: rgb(255, 51, 0);
+}
+
+
+header .container {
+    font-size: 36px;
+    margin: auto;
+    max-width: 1200px;
+    background-color: #CCCCCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-content: center; */
+
+    color: #FFFFFF;
+}
+
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    
+    gap: 32px;
+    font-size: 16px;
+    padding: 17px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+
+main .container {
+    background-color: aqua;
+}
+
+
+
+
+
+
+
