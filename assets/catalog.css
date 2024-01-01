@@ -5,9 +5,7 @@
 
 }
 
-body {
-    background-color: rgb(255, 51, 0);
-}
+
 
 
 header .container {
@@ -18,8 +16,6 @@ header .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* align-content: center; */
-
     color: #FFFFFF;
 }
 
@@ -27,7 +23,6 @@ header .container {
 #menu {
     display: flex;
     flex-direction: row;
-
     gap: 32px;
     font-size: 16px;
     padding: 17px;
@@ -46,37 +41,74 @@ a {
 
 main .container {
     max-width: 1200px;
-    background-color: aqua;
     margin: auto;
     display: flex;
     justify-content: flex-end;
 }
 
-.buttonList button {
+.filter select {
     border-radius: 20px;
     border: 1px solid #C4C4C4;
-    padding: 10px 15px ;
+    padding: 10px 15px;
     margin: 30px 0px;
     font-size: 16px;
 }
 
 
-.buttonList button svg{
-    padding: 0px 10px;
-}
+
+
+
+
 
 
 
 
 main .containerCatalog {
     max-width: 1200px;
-    background-color: rgb(98, 224, 13);
     margin: auto;
-    display: flex;
- 
 }
 
 
-.row{
-    background-color: chocolate;
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 31px;
+}
+
+.containerCatalog .row .item {
+    max-width: 379px;
+    min-height: 385px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+
+
+.containerCatalog .row .item .photo .icons {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.containerCatalog .row .item .photo .icons svg {
+    padding: 8px 12px;
+}
+
+.containerCatalog .row .item .photo .icons svg:hover {
+    stroke: #C4C4C4;
+
+}
+
+.containerCatalog .row .item .info {
+    /* font-size: 24px; */
+    padding: 10px 0px;
+}
+
+
+.row p {
+    color: #888;
+    font-size: 14px;
+    padding: 10px 0px;
 }
