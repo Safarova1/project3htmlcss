@@ -24,18 +24,20 @@ header .container {
 }
 
 
-#menu{
+#menu {
     display: flex;
     flex-direction: row;
-    
+
     gap: 32px;
     font-size: 16px;
     padding: 17px;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: #FFFFFF;
 }
@@ -43,12 +45,38 @@ a{
 
 
 main .container {
+    max-width: 1200px;
     background-color: aqua;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttonList button {
+    border-radius: 20px;
+    border: 1px solid #C4C4C4;
+    padding: 10px 15px ;
+    margin: 30px 0px;
+    font-size: 16px;
+}
+
+
+.buttonList button svg{
+    padding: 0px 10px;
 }
 
 
 
 
+main .containerCatalog {
+    max-width: 1200px;
+    background-color: rgb(98, 224, 13);
+    margin: auto;
+    display: flex;
+ 
+}
 
 
-
+.row{
+    background-color: chocolate;
+}
