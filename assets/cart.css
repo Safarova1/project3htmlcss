@@ -1,0 +1,356 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+body {
+    margin: 0px 20px;
+}
+
+
+header .container {
+    font-size: 36px;
+    margin: auto;
+    max-width: 1200px;
+    background-color: #CCCCCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    font-size: 16px;
+    padding: 17px;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+#menu svg {
+    display: none;
+}
+
+
+
+
+
+
+/* main */
+main .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    /* background-color: aqua; */
+    width: 100%;
+    gap: 30px;
+}
+
+.left {
+    width: 70%;
+    margin: 32px 0px;
+}
+
+
+.text {
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+    padding-bottom: 14px;
+}
+
+
+.carts {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 0px;
+
+}
+
+.cart .containers {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+.info {
+    /* padding: 0px 31px; */
+    max-width: 276px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info p {
+    font-size: 14px;
+    color: #888;
+}
+
+.info div a {
+    font-size: 14px;
+    color: #000;
+    text-decoration: underline;
+    padding-right: 30px;
+}
+
+
+.button {
+    border-radius: 6px;
+    background: #F7F6F6;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    padding: 10px;
+}
+
+.count {
+    padding: 10px;
+}
+
+.updown {
+    display: flex;
+    flex-direction: column;
+}
+
+.updown button {
+    border: 0px;
+    background-color: #F7F6F6;
+}
+
+.updown button:active {
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+.buttons button {
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-size: 14px;
+    margin: 3px 3px;
+    border: 1px solid #000;
+}
+
+.buttons .delete {
+    background-color: #FFFFFF;
+}
+
+.buttons .delete:hover {
+    background-color: #ff0404;
+    color: #FFFFFF;
+}
+
+.buttons .buy {
+    background-color: #000;
+    color: #FFFFFF;
+}
+
+
+.buttons .buy:hover {
+    background-color: #5eff00;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+.right {
+    width: 30%;
+    margin: 32px 0px;
+    padding: 42px 28px;
+    border-radius: 20px;
+    background: #F7F6F6;
+    text-align: center;
+}
+
+
+
+.right h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+form {
+    margin: 35px 0px;
+}
+
+form input {
+    margin: 20px 0px;
+    width: 288px;
+    background-color: #F7F6F6;
+    border: none;
+    border-bottom: 2px solid #CACDD8;
+}
+
+
+.right p {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.right button {
+    padding: 10px 70px;
+    border-radius: 20px;
+    border: 1px solid #040404;
+}
+
+.right button:hover {
+    background-color: #5eff00;
+}
+
+
+
+
+
+
+/* iPad Pro 11"  */
+@media (max-width: 834px) {
+
+    main .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        padding: 42px;
+        width: 334px;
+        height: 556px;
+    }
+
+}
+
+
+/* iPhone 11 Pro */
+@media (max-width: 455px) {
+
+    body {
+        margin: 0px 10px;
+    }
+
+    header {
+        background-color: #CCCCCC;
+        padding: 32px 16px 0px;
+    }
+
+    header .container {
+        font-size: 18px;
+        padding: 16px 0px;
+    }
+
+    #menu p {
+        display: none;
+    }
+
+    #menu {
+        padding: 0px;
+    }
+
+    #menu svg {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .catlink {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+    main .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left .text {
+        display: none;
+    }
+
+    .carts .image {
+        display: none;
+    }
+
+    .carts .info h2 {
+        padding: 10px 0px;
+        font-size: 18px;
+    }
+
+    .carts .info p,
+    h4 {
+        padding: 10px 0px;
+        font-size: 12px;
+    }
+
+
+    .container .buttons button{
+        font-size: 12px;
+        padding: 11px 15px;
+    }
+
+
+
+
+    .right {
+        padding: 42px;
+        width: 300px;
+        height: 556px;
+    }
+}
